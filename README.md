@@ -1,14 +1,15 @@
-# Andrej AutoGrad (Java)
+# java-micorgrad
 
-A concise, readable Java implementation of Andrej Karpathy’s micrograd ideas: scalar autograd + tiny neural nets (Neuron → Layer → MLP) built directly on a dynamic computation graph.
+A concise, readable Java implementation of Andrej Karpathy's micrograd ideas: scalar autograd + tiny neural nets (Neuron → Layer → MLP) built directly on a dynamic computation graph.
+
+Inspired by Andrej Karpathy's micrograd - Vibe coded my way to understand NN fundamentals.
 
 - Core: `Value` nodes build a graph at runtime and backprop through it
 - NN building blocks: `Neuron`, `Layer`, `MLP`
 - Demos: exact micrograd replica and an enhanced classifier
 - Visualizations: computation graphs and decision boundaries
-- Vibe coded my way to understand NN fundamentals
 
-Project goal: Learn-by-building. Show the full path from scalars to a working MLP with clear code.
+**Project goal**: Learn-by-building. Show the full path from scalars to a working MLP with clear code.
 
 ## Quick Start
 
@@ -64,6 +65,5 @@ src/main/java/com/vaibhavkhare/ml/autograd/
   - macOS: `brew install graphviz`
 
 ## Attribution
-- Inspired by Andrej Karpathy’s micrograd (`https://github.com/karpathy/micrograd`)
+- Inspired by Andrej Karpathy's micrograd (`https://github.com/karpathy/micrograd`)
 - This project is a clean, Java-first learning implementation
-
