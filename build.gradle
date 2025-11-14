@@ -1,0 +1,44 @@
+plugins {
+    id 'java'
+    id 'application'
+}
+
+group = 'com.vaibhavkhare.ml.autograd'
+version = '1.0.0'
+
+java {
+    sourceCompatibility = JavaVersion.VERSION_21
+    targetCompatibility = JavaVersion.VERSION_21
+}
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    implementation 'guru.nidi:graphviz-java:0.18.1'
+    implementation 'org.slf4j:slf4j-simple:1.7.36'
+    // GraalVM JS engine for Java 15+ (required for Java 21)
+    implementation 'org.graalvm.js:js:22.3.0'
+    implementation 'org.graalvm.js:js-scriptengine:22.3.0'
+    implementation 'org.knowm.xchart:xchart:3.8.5'
+    testImplementation 'org.junit.jupiter:junit-jupiter:5.10.0'
+    testRuntimeOnly 'org.junit.platform:junit-platform-launcher'
+}
+
+application {
+    mainClass = 'com.vaibhavkhare.ml.autograd.demo.Application'
+}
+
+// Task to run MicrogradReplicaDemo
+task runMicrogradReplica(type: JavaExec) {
+    group = 'application'
+    description = 'Runs the MicrogradReplicaDemo'
+    classpath = sourceSets.main.runtimeClasspath
+    mainClass = 'com.vaibhavkhare.ml.autograd.demo.MicrogradReplicaDemo'
+}
+
+tasks.named('test') {
+    useJUnitPlatform()
+}
+
