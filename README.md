@@ -68,5 +68,5 @@ src/main/java/com/vaibhavkhare/ml/autograd/
 - [Andrej Karpathy's micrograd](https://github.com/karpathy/micrograd)
 
 ## My thoughts
-- 
+- [From Micrograd to Java: Why I Spent a Weekend Reimplementing Neural Nets from Scratch](https://medium.com/@vaibhavk81/from-micrograd-to-java-why-i-spent-a-weekend-reimplementing-neural-nets-from-scratch-b084a8e0d4b0)
 
