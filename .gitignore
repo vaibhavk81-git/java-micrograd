@@ -10,6 +10,8 @@ build/
 *.ipr
 out/
 .vscode/
+.cu
+.cursorignore
 
 # OS
 .DS_Store
